@@ -435,7 +435,7 @@ details.possible code { font-family: var(--font-mono); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* =====================================================================
+=====================================================================
    ১৭. অন্য থিমের উদাহরণ (এখন বন্ধ, চাইলে ব্যবহার করো)
    উপরের :root-এর রংগুলো এখানে কপি করে বদলালে থিম পাল্টে যাবে।
    ===================================================================== */
@@ -451,4 +451,3 @@ details.possible code { font-family: var(--font-mono); }
   --color-accent-soft: #0c4a6e;
   --color-accent-border: #0284c7;
 }
-*/
