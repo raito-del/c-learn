@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- পুরো পেজের শুরু। lang="bn" মানে পেজের ভাষা বাংলা -->
+<html lang="bn">
+<head>
+  <!-- অক্ষর এনকোডিং: বাংলা ঠিকভাবে দেখানোর জন্য UTF-8 লাগে -->
+  <meta charset="UTF-8">
+  <!-- মোবাইলে পেজের প্রস্থ স্ক্রিনের সাথে মিলিয়ে নেওয়ার জন্য -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C শিখি</title>
+ 
+  <!-- বাংলা ও কোডের জন্য ফন্ট -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+ 
+  <!-- ডিজাইনের CSS ফাইল -->
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <!-- C কোড চালানোর লাইব্রেরি (JSCPP) -->
+  <script src="https://cdn.jsdelivr.net/npm/JSCPP@2.0.7/dist/JSCPP.es5.min.js"></script>
+</head>
+<body>
+ 
+  <!-- উপরের হেডার: লোগো ও অগ্রগতি -->
+  <header class="topbar">
+    <button class="brand" id="home">
+      <span class="logo">C</span>
+      <span class="brand-text">
+        <strong>C শিখি</strong>
+        <span>ধাপে ধাপে, একদম শুরু থেকে</span>
+      </span>
+    </button>
+    <div class="progress">
+      <div class="track"><div class="fill" id="fill"></div></div>
+      <span id="ptext"></span>
+    </div>
+  </header>
+ 
+  <!-- মূল লেআউট: বাম দিকে টপিকের তালিকা, ডান দিকে কন্টেন্ট -->
+  <div class="shell">
+    <!-- টপিকের তালিকা JavaScript দিয়ে বসবে -->
+    <aside class="nav" id="nav"></aside>
+    <!-- টপিকের থিওরি, কোড, MCQ, প্র্যাকটিস এখানে দেখাবে -->
+    <main class="content" id="app"></main>
+  </div>
+ 
+  <!-- প্রতিটা টপিক আলাদা ফাইলে থাকবে। নতুন টপিক এলে এখানে একটা লাইন যোগ হবে -->
+  <script src="topics/t01.js"></script>
+ 
+  <!-- মূল লজিক: নেভিগেশন, রান, যাচাই, অগ্রগতি -->
+  <!-- অবশ্যই টপিক ফাইলের পরে লোড হবে, কারণ এটা টপিকের তথ্য ব্যবহার করে -->
+  <script src="js/engine.js"></script>
+</body>
+</html>
+ 
